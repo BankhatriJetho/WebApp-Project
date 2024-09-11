@@ -2,23 +2,17 @@ package com.asian.grocerystore.userservice.controller;
 
 import com.asian.grocerystore.userservice.model.User;
 import com.asian.grocerystore.userservice.service.UserService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+
 
 @RestController
 @RequestMapping("/api/users")
-
+@Validated
 public class UserController {
-    @Autowired
-    private UserService userService;
-
-    @PostMapping("/register")
-    public User registerUser(@RequestBody User user) {
-        return userService.saveUser(user);
-    }
-
-    @GetMapping("/{username}")
-    public User getUserByUsername(@PathVariable String username) {
-        return userService.findByUsername(username).orElse(null);
-    }
+    // no user related Implementation
 }
