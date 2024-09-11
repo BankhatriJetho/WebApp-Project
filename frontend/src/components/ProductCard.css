@@ -1,0 +1,84 @@
+/* src/components/ProductCard.css */
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+    margin: 10px;
+    width: 200px;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.product-card button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background-color: #218838;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Add this to your ProductCard CSS file */
+.product-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: #000; /* Black text in light mode */
+  }
+  
+  body.dark-mode .product-card {
+    background-color: #333; /* Dark background for the card */
+    color: #ffffff; /* Ensure text is fully white for visibility */
+  }
+  
+  body.dark-mode .product-card img {
+    filter: brightness(1); /* Keep the image normal brightness */
+  }
+  
+  body.dark-mode .product-card h3, /* For product name */
+  body.dark-mode .product-card p {  /* For product description or price */
+    color: #ffffff; /* Fully white text to stand out in dark mode */
+  }
+  
+  body.dark-mode .product-card button {
+    background-color: #ff5722; /* Orange buttons for contrast */
+    color: white;
+  }
+  
+  body.light-mode .product-card h3,
+  body.light-mode .product-card p {
+    color: #000; /* Ensuring visibility in light mode */
+  }
+  

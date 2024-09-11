@@ -1,0 +1,15 @@
+.product-categories {
+    margin: 20px 0;
+}
+
+.product-categories h2 {
+    margin-bottom: 10px;
+}
+
+.product-categories select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}

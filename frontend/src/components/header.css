@@ -1,0 +1,114 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #e0e0e0;
+  color: #000;
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  flex: 1;
+  text-align: left;
+}
+
+.header-center {
+  flex: 2;
+  text-align: center;
+}
+
+.header-center h1 {
+  margin: 0;
+}
+
+.header-right {
+  flex: 1;
+  text-align: right;
+}
+
+/* Increase size of home icon */
+.home-icon {
+  color: #000;
+  text-decoration: none;
+  font-size: 2em; /* Adjusting size */
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.shopping-list {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.2em;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+  border: 2px solid #333; /* Adding a border to make it look like a button */
+  padding: 5px 10px; /* Adding padding to match button styling */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.theme-toggle {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 1.2em; /* Matching size with Shopping List */
+  border-radius: 5px; /* Rounded corners */
+}
+
+input[type='text'] {
+  padding: 5px;
+  width: 60%;
+}
+
+body.light-mode .shopping-list {
+  color: #333;
+}
+
+body.light-mode .header {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+body.light-mode .theme-toggle {
+  background-color: #ddd;
+  color: #000;
+}
+
+body.light-mode .shopping-list:hover {
+  color: #ff5722;
+  background-color: #f5f5f5; /* Subtle background color change on hover */
+}
+
+/* Dark mode adjustments */
+body.dark-mode .header {
+  background-color: #333;
+  color: white;
+}
+
+body.dark-mode .home-icon,
+body.dark-mode .shopping-list {
+  color: white; /* White text in dark mode */
+}
+
+body.dark-mode .theme-toggle {
+  background-color: #888;
+  color: white;
+}
+
+body.dark-mode .shopping-list:hover {
+  color: #ffcc00; /* Yellow hover in dark mode */
+  background-color: #444; /* Dark background hover */
+}
+
+body.dark-mode .theme-toggle:hover {
+  background-color: #555;
+}
