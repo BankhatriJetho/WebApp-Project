@@ -1,7 +1,5 @@
 // src/components/Header.js
 
-// src/components/Header.js
-
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { ThemeContext } from './ThemeContext';
@@ -27,9 +25,8 @@ const Header = ({ onSearch }) => {
           />
         </div>
         <div className="header-right">
-          <Link to="/shoppinglist" className="shopping-list button-style">
-            Shopping List
-          </Link>
+          <Link to="/shoppinglist" className="shopping-list button-style">Shopping List</Link>
+          <Link to="/admin" className="admin-dashboard">Admin</Link>
           <button className="theme-toggle button-style" onClick={toggleTheme}>
             {isDarkMode ? 'Light Mode' : 'Dark Mode'}
           </button>

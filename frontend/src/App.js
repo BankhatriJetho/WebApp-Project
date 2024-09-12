@@ -4,8 +4,12 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import ShoppingListPage from './pages/ShoppingListPage';
+import AdminLogin from './components/admin/AdminLogin';
+import AdminDashboard from './components/admin/AdminDashboard';
+import ProductManagement from './components/admin/ProductManagement';
+import OrderManagement from './components/admin/OrderManagement';
 import { ThemeProvider } from './components/ThemeContext';
-import './styles/styles.css'; // Global styles
+import './styles/styles.css'; 
 
 const App = () => {
   const [shoppingList, setShoppingList] = useState(
